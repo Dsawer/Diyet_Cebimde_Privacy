@@ -1,0 +1,829 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Diyet Cebimde - Gizlilik Politikası</title>
+  <meta name="description" content="Diyet Cebimde Gizlilik Politikası ve KVKK Aydınlatma Metni / Privacy Policy and Data Protection Notice" />
+  <style>
+    :root {
+      --bg: #f7faf7;
+      --surface: #ffffff;
+      --surface-soft: #eef7ef;
+      --text: #18211b;
+      --muted: #5f6f64;
+      --border: #dbe8dd;
+      --accent: #2f7d46;
+      --accent-dark: #225f34;
+      --accent-soft: #dff2e3;
+      --warning: #7a4a00;
+      --warning-bg: #fff5dc;
+      --shadow: 0 18px 50px rgba(24, 33, 27, 0.08);
+      --radius: 18px;
+      --max: 1120px;
+    }
+
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background:
+        radial-gradient(circle at top left, rgba(47, 125, 70, 0.16), transparent 34rem),
+        linear-gradient(180deg, #f7faf7 0%, #ffffff 100%);
+      color: var(--text);
+      line-height: 1.65;
+    }
+
+    a { color: var(--accent-dark); text-decoration-thickness: 0.08em; text-underline-offset: 0.18em; }
+    a:hover { color: var(--accent); }
+
+    .topbar {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      backdrop-filter: blur(18px);
+      background: rgba(247, 250, 247, 0.82);
+      border-bottom: 1px solid rgba(219, 232, 221, 0.85);
+    }
+
+    .topbar-inner {
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 0.85rem 1.25rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 0.72rem;
+      min-width: 0;
+    }
+
+    .brand-mark {
+      width: 2.25rem;
+      height: 2.25rem;
+      border-radius: 0.8rem;
+      background: linear-gradient(135deg, var(--accent), #83c77e);
+      box-shadow: 0 10px 24px rgba(47, 125, 70, 0.22);
+      display: grid;
+      place-items: center;
+      color: #fff;
+      font-weight: 800;
+      letter-spacing: -0.05em;
+      flex: 0 0 auto;
+    }
+
+    .brand-text {
+      display: flex;
+      flex-direction: column;
+      line-height: 1.15;
+      min-width: 0;
+    }
+
+    .brand-text strong {
+      font-size: 1rem;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .brand-text span {
+      color: var(--muted);
+      font-size: 0.78rem;
+    }
+
+    .lang-switch {
+      display: inline-flex;
+      border: 1px solid var(--border);
+      background: var(--surface);
+      border-radius: 999px;
+      padding: 0.22rem;
+      box-shadow: 0 6px 18px rgba(24, 33, 27, 0.06);
+      flex: 0 0 auto;
+    }
+
+    .lang-switch button {
+      border: 0;
+      background: transparent;
+      color: var(--muted);
+      font-weight: 750;
+      border-radius: 999px;
+      padding: 0.5rem 0.72rem;
+      cursor: pointer;
+      line-height: 1;
+    }
+
+    .lang-switch button:focus-visible {
+      outline: 3px solid rgba(47, 125, 70, 0.32);
+      outline-offset: 2px;
+    }
+
+    .lang-switch button.active {
+      background: var(--accent);
+      color: #fff;
+    }
+
+    .container {
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 2.5rem 1.25rem 4rem;
+    }
+
+    .hero {
+      display: grid;
+      grid-template-columns: 1.35fr 0.65fr;
+      gap: 1.25rem;
+      align-items: stretch;
+      margin-bottom: 1.25rem;
+    }
+
+    .hero-main, .meta-card, .toc, .section, .notice {
+      background: rgba(255, 255, 255, 0.9);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+    }
+
+    .hero-main {
+      padding: clamp(1.4rem, 3.6vw, 3rem);
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+      padding: 0.33rem 0.65rem;
+      background: var(--accent-soft);
+      color: var(--accent-dark);
+      border-radius: 999px;
+      font-size: 0.83rem;
+      font-weight: 760;
+      margin-bottom: 1rem;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(2rem, 4.4vw, 4rem);
+      line-height: 1.04;
+      letter-spacing: -0.06em;
+    }
+
+    .subtitle {
+      color: var(--muted);
+      margin: 1rem 0 0;
+      font-size: 1.05rem;
+      max-width: 62ch;
+    }
+
+    .meta-card {
+      padding: 1.25rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+      justify-content: center;
+    }
+
+    .meta-row {
+      padding: 0.8rem 0.9rem;
+      background: var(--surface-soft);
+      border-radius: 0.9rem;
+      border: 1px solid rgba(219, 232, 221, 0.85);
+    }
+
+    .meta-row span {
+      display: block;
+      color: var(--muted);
+      font-size: 0.78rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+
+    .meta-row strong {
+      display: block;
+      margin-top: 0.15rem;
+      overflow-wrap: anywhere;
+    }
+
+    .notice {
+      padding: 1rem 1.15rem;
+      margin: 1.25rem 0;
+      background: var(--warning-bg);
+      border-color: #f0dca4;
+      color: var(--warning);
+    }
+
+    .notice strong { color: #5b3700; }
+
+    .toc {
+      padding: 1.25rem;
+      margin: 1.25rem 0;
+    }
+
+    .toc h2 {
+      margin: 0 0 0.9rem;
+      font-size: 1.05rem;
+      letter-spacing: -0.02em;
+    }
+
+    .toc-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 0.55rem;
+    }
+
+    .toc a {
+      display: block;
+      padding: 0.72rem 0.85rem;
+      border-radius: 0.9rem;
+      color: var(--text);
+      text-decoration: none;
+      background: #f7fbf8;
+      border: 1px solid rgba(219, 232, 221, 0.72);
+      font-weight: 650;
+    }
+
+    .toc a:hover { border-color: var(--accent); background: var(--accent-soft); }
+
+    .section {
+      padding: clamp(1.2rem, 2.5vw, 2rem);
+      margin: 1rem 0;
+      scroll-margin-top: 6rem;
+    }
+
+    .section h2 {
+      margin: 0 0 0.9rem;
+      font-size: clamp(1.25rem, 2.2vw, 1.65rem);
+      line-height: 1.2;
+      letter-spacing: -0.035em;
+    }
+
+    .section h3 {
+      margin: 1.2rem 0 0.4rem;
+      font-size: 1rem;
+    }
+
+    p { margin: 0.65rem 0; }
+
+    ul {
+      margin: 0.7rem 0 0.2rem;
+      padding-left: 1.2rem;
+    }
+
+    li { margin: 0.3rem 0; }
+
+    .pill-list {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-top: 0.8rem;
+    }
+
+    .pill-list li {
+      margin: 0;
+      padding: 0.42rem 0.65rem;
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      background: #f8fbf8;
+      color: #2d3a30;
+      font-weight: 620;
+      font-size: 0.92rem;
+    }
+
+    .two-col {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 0.75rem;
+      margin-top: 0.75rem;
+    }
+
+    .mini-card {
+      border: 1px solid var(--border);
+      border-radius: 1rem;
+      background: #fbfdfb;
+      padding: 0.9rem;
+    }
+
+    .mini-card strong { display: block; margin-bottom: 0.25rem; }
+    .mini-card p { margin: 0; color: var(--muted); }
+
+    .footer {
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 2rem 1.25rem 3rem;
+      color: var(--muted);
+      font-size: 0.92rem;
+      border-top: 1px solid var(--border);
+    }
+
+    .lang-content[hidden] { display: none !important; }
+
+    @media (max-width: 820px) {
+      .hero { grid-template-columns: 1fr; }
+      .toc-grid { grid-template-columns: 1fr; }
+      .two-col { grid-template-columns: 1fr; }
+      .topbar-inner { padding-inline: 0.9rem; }
+      .container { padding-inline: 0.9rem; }
+      .brand-text span { display: none; }
+    }
+
+    @media print {
+      body { background: #fff; color: #000; }
+      .topbar, .toc { display: none; }
+      .container { padding: 0; max-width: none; }
+      .hero { display: block; }
+      .hero-main, .meta-card, .section, .notice {
+        box-shadow: none;
+        border: 1px solid #bbb;
+        break-inside: avoid;
+      }
+      a { color: #000; text-decoration: none; }
+    }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <div class="brand" aria-label="Diyet Cebimde">
+        <div class="brand-mark" aria-hidden="true">DC</div>
+        <div class="brand-text">
+          <strong>Diyet Cebimde</strong>
+          <span data-i18n="top-subtitle">Gizlilik Politikası</span>
+        </div>
+      </div>
+      <nav class="lang-switch" aria-label="Language switcher">
+        <button type="button" id="btn-tr" data-lang="tr" aria-label="Türkçe görüntüle">TR</button>
+        <button type="button" id="btn-en" data-lang="en" aria-label="View in English">EN</button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <article id="content-tr" class="lang-content" lang="tr">
+      <section class="hero">
+        <div class="hero-main">
+          <div class="eyebrow">KVKK + GDPR ilkeleri</div>
+          <h1>Gizlilik Politikası ve KVKK Aydınlatma Metni</h1>
+          <p class="subtitle">Bu metin, Diyet Cebimde uygulamasının kişisel verileri nasıl topladığını, işlediğini, aktardığını, sakladığını ve sildiğini açıklar.</p>
+        </div>
+        <aside class="meta-card" aria-label="Politika bilgileri">
+          <div class="meta-row"><span>Uygulama</span><strong>Diyet Cebimde</strong></div>
+          <div class="meta-row"><span>Sürüm</span><strong>1.1.0</strong></div>
+          <div class="meta-row"><span>Son Güncelleme</span><strong>17 Mayıs 2026</strong></div>
+          <div class="meta-row"><span>İletişim</span><strong><a href="mailto:diyetcebimdeiletisim@gmail.com">diyetcebimdeiletisim@gmail.com</a></strong></div>
+        </aside>
+      </section>
+
+      <div class="notice"><strong>Önemli:</strong> Diyet Cebimde bir tıbbi cihaz değildir. Uygulama tıbbi teşhis, tedavi veya profesyonel sağlık hizmeti sunmaz. Yapay zekâ çıktıları ve fotoğraftan beslenme tahminleri yaklaşık olabilir.</div>
+
+      <nav class="toc" aria-label="İçindekiler">
+        <h2>İçindekiler</h2>
+        <div class="toc-grid">
+          <a href="#tr-1">1. Veri Sorumlusu ve Kapsam</a>
+          <a href="#tr-2">2. İşlenen Veri Kategorileri</a>
+          <a href="#tr-3">3. İşleme Amaçları</a>
+          <a href="#tr-4">4. Hukuki Sebepler</a>
+          <a href="#tr-5">5. Özel Nitelikli / Sağlıkla İlgili Veriler</a>
+          <a href="#tr-6">6. Yapay Zekâ Sohbeti ve Fotoğraf Analizi</a>
+          <a href="#tr-7">7. Reklam, Rıza ve Takip</a>
+          <a href="#tr-8">8. Üçüncü Taraflar ve Yurt Dışı Aktarım</a>
+          <a href="#tr-9">9. Uygulama İzinleri</a>
+          <a href="#tr-10">10. Saklama Süreleri</a>
+          <a href="#tr-11">11. Hesap Silme</a>
+          <a href="#tr-12">12. Güvenlik Tedbirleri</a>
+          <a href="#tr-13">13. Kullanıcı Hakları</a>
+          <a href="#tr-14">14. Çocukların Gizliliği</a>
+          <a href="#tr-15">15. Web Sitesi ve Dil Tercihi</a>
+          <a href="#tr-16">16. Politika Değişiklikleri</a>
+          <a href="#tr-17">17. İletişim</a>
+        </div>
+      </nav>
+
+      <section class="section" id="tr-1">
+        <h2>1. Veri Sorumlusu ve Kapsam</h2>
+        <p><strong>Veri sorumlusu: Melisa Karakurt (‘Diyet Cebimde’ uygulamasının bireysel geliştiricisi).</strong></p>
+        <p>Veri sorumlusu Türkiye, Ankara merkezli bireysel geliştirici statüsünde hareket eder. Bu metin, Diyet Cebimde mobil uygulaması ve uygulamaya ait herkese açık gizlilik politikası sayfası kapsamında yürütülen kişisel veri işleme faaliyetlerini kapsar.</p>
+        <p>Bu metin; 6698 sayılı Kişisel Verilerin Korunması Kanunu (“KVKK”), ilgili ikincil mevzuat ve uygulanabilir olduğu ölçüde Avrupa Birliği Genel Veri Koruma Tüzüğü (“GDPR”) ilkeleri dikkate alınarak hazırlanmıştır.</p>
+      </section>
+
+      <section class="section" id="tr-2">
+        <h2>2. İşlenen Veri Kategorileri</h2>
+        <ul>
+          <li><strong>Kimlik ve hesap verileri:</strong> ad-soyad, e-posta adresi, kullanıcı kimliği, Google OAuth bilgileri, kimlik doğrulama ve oturum bilgileri.</li>
+          <li><strong>Sağlık ve beslenme ile ilgili veriler:</strong> kilo, boy, yaş, cinsiyet, hedef kilo, alerji, kullanıcı tarafından sağlanırsa hastalık/durum bilgisi, kalori ve makro takibi, su tüketimi, aktivite/egzersiz verileri.</li>
+          <li><strong>İçerik verileri:</strong> sohbet içeriğinden türetilen özetler, konu/profil bilgileri, mesaj sayacı, manuel öğün kayıtları, yemek fotoğrafı analiz sonuçları.</li>
+          <li><strong>Teknik veriler:</strong> uygulama sürümü, cihaz ve bağlantı bilgileri, işlem kayıtları, hata ayıklama ve güvenlik amaçlı teknik loglar.</li>
+          <li><strong>Reklam ve rıza verileri:</strong> reklam tanımlayıcıları, reklam etkileşimleri, izin/rıza durumu, platform reklam tercihleri ve ilgili ölçümleme olayları.</li>
+          <li><strong>İç analiz verileri:</strong> uygulama performansı, kullanım istatistikleri ve hizmet kalitesini izlemek için oluşturulan dahili metrikler.</li>
+        </ul>
+      </section>
+
+      <section class="section" id="tr-3">
+        <h2>3. İşleme Amaçları</h2>
+        <ul>
+          <li>Kişiye özel beslenme ve wellness deneyimi sunmak.</li>
+          <li>Öğün, su, kilo, aktivite ve ilerleme takibi sağlamak.</li>
+          <li>Yapay zekâ destekli sohbet ve yemek fotoğrafı analizi üzerinden tahmini beslenme çıktıları üretmek.</li>
+          <li>Hesap oluşturma, oturum yönetimi, kimlik doğrulama ve güvenlik işlemlerini yürütmek.</li>
+          <li>Bildirimler ve hatırlatıcılar gibi uygulama işlevlerini sağlamak.</li>
+          <li>Hata tespiti, performans iyileştirmesi, kötüye kullanım önleme ve hizmet sürekliliği sağlamak.</li>
+          <li>Uygulama içi reklam sunmak, reklam performansını ölçmek ve kullanıcı tercihleri doğrultusunda reklam kişiselleştirmesi yapmak.</li>
+          <li>Yasal yükümlülükleri yerine getirmek ve kullanıcı taleplerini yanıtlamak.</li>
+        </ul>
+      </section>
+
+      <section class="section" id="tr-4">
+        <h2>4. Hukuki Sebepler</h2>
+        <p>Kişisel veriler; açık rıza, sözleşmenin kurulması veya ifası, hukuki yükümlülük, veri sorumlusunun meşru menfaati ve ilgili mevzuatta öngörülen diğer hukuki sebeplere dayanılarak işlenebilir.</p>
+        <ul>
+          <li><strong>Açık rıza:</strong> sağlıkla ilgili veriler, özel nitelikli veriler, gerektiğinde yurt dışı aktarım ve kişiselleştirilmiş reklam/izleme tercihleri.</li>
+          <li><strong>Sözleşmenin ifası:</strong> hesap oluşturma, uygulama özelliklerinin çalıştırılması, kişiselleştirilmiş takip hizmetlerinin sunulması.</li>
+          <li><strong>Meşru menfaat:</strong> güvenlik, kötüye kullanımın önlenmesi, hata tespiti, hizmet sürekliliği ve dahili performans analizi.</li>
+          <li><strong>Hukuki yükümlülük:</strong> yetkili makam talepleri, kayıt tutma veya yasal başvuruların yanıtlanması.</li>
+        </ul>
+      </section>
+
+      <section class="section" id="tr-5">
+        <h2>5. Özel Nitelikli / Sağlıkla İlgili Veriler</h2>
+        <p>Diyet Cebimde; kilo, boy, alerji, hedef kilo, beslenme tercihleri, hastalık/durum bilgisi ve benzeri verileri kullanıcı tarafından girildiği ölçüde işleyebilir. Bu veriler sağlıkla ilgili veya özel nitelikli veri niteliği taşıyabilir.</p>
+        <p>Bu tür veriler, yalnızca uygulamanın wellness ve beslenme takibi işlevlerini sunmak için ve gerekli olduğu ölçüde işlenir. Gerekli hallerde açık rıza alınır.</p>
+        <p>Diyet Cebimde bir tıbbi cihaz değildir. Uygulama tıbbi teşhis, tedavi, hastalık yönetimi veya profesyonel sağlık danışmanlığı sunmaz. Hamilelik, kronik hastalık, ciddi alerji, yeme bozukluğu geçmişi, özel diyet ihtiyacı veya tıbbi tedavi durumlarında uzman sağlık profesyoneline danışılmalıdır.</p>
+      </section>
+
+      <section class="section" id="tr-6">
+        <h2>6. Yapay Zekâ Sohbeti ve Fotoğraf Analizi</h2>
+        <p>Uygulama, yapay zekâ destekli sohbet ve yemek fotoğrafı analizi için Google Gemini API gibi üçüncü taraf yapay zekâ hizmetlerinden yararlanabilir. Kullanıcının gönderdiği metinler, yemek fotoğrafları veya ilgili içerikler analiz amacıyla bu hizmetlere aktarılabilir.</p>
+        <p>Fotoğraftan üretilen kalori, makro besin, porsiyon ve içerik tahminleri yaklaşıktır. Yapay zekâ çıktıları eksik, hatalı veya kişisel durumunuza uygun olmayan bilgiler içerebilir.</p>
+        <p>Uygulama tam sohbet geçmişini zorunlu olarak saklamayabilir; ancak konuşmadan türetilen özet, profil, konu bilgisi ve mesaj sayacı gibi kayıtlar tutulabilir. Bu kayıtlar, hesap silinene veya yasal/operasyonel saklama ihtiyacı sona erene kadar saklanabilir.</p>
+        <p>Kişisel içeriklerinizi kendi yapay zekâ modellerimizi eğitmek amacıyla bilinçli olarak kullanmayız. Üçüncü taraf yapay zekâ hizmetleri üzerinden yapılan işlemler, ilgili sağlayıcının geçerli şartlarına ve gizlilik uygulamalarına tabi olabilir.</p>
+      </section>
+
+      <section class="section" id="tr-7">
+        <h2>7. Reklam, Rıza ve Takip</h2>
+        <p>Uygulamada Google AdMob üzerinden reklam gösterilebilir. Reklam gösterimi kapsamında reklam tanımlayıcıları, reklam etkileşim olayları, cihaz bilgileri ve rıza tercihleri işlenebilir.</p>
+        <p>Kişiselleştirilmiş reklamlar, platform kuralları ve kullanıcının rıza/izin tercihleri doğrultusunda sunulabilir. Uygun olduğu durumlarda Google UMP rıza akışı, iOS App Tracking Transparency izni ve işletim sistemi reklam tercihleri kullanılabilir. Rıza verilmediğinde teknik olarak mümkün olduğu ölçüde kişiselleştirilmemiş reklamlar gösterilebilir.</p>
+        <p>Reklam izleme ve kişiselleştirme tercihlerinizi cihaz ayarlarınızdan, platform izinlerinden veya uygulama içinde sunulan rıza araçlarından değiştirebilirsiniz.</p>
+      </section>
+
+      <section class="section" id="tr-8">
+        <h2>8. Üçüncü Taraf Hizmet Sağlayıcılar ve Yurt Dışı Aktarım</h2>
+        <p>Diyet Cebimde bazı işlevleri üçüncü taraf hizmet sağlayıcıları ile yürütür. Aktarımlar, hizmetin çalışması için gerekli minimum kapsamla sınırlı tutulur.</p>
+        <ul>
+          <li><strong>Google Gemini API:</strong> yapay zekâ sohbeti ve yemek fotoğrafı analizi.</li>
+          <li><strong>Google OAuth:</strong> kullanıcı tercihine bağlı Google ile giriş.</li>
+          <li><strong>Google AdMob:</strong> uygulama içi reklam, ölçümleme ve uygun hallerde reklam kişiselleştirmesi.</li>
+          <li><strong>Railway ve altyapı hizmetleri:</strong> uygulama sunucusu, backend ve veritabanı altyapısı.</li>
+          <li><strong>App Store / Google Play:</strong> dağıtım, platform hizmetleri ve varsa ödeme/abonelik süreçleri.</li>
+          <li><strong>Expo Notifications:</strong> yerel veya planlanmış bildirim işlevleri.</li>
+        </ul>
+        <p>Bu sağlayıcıların bazıları Türkiye veya Avrupa Birliği dışında bulunabilir. Bu nedenle kişisel veriler, uygulama özelliklerinin çalışması için yurt dışına aktarılabilir. Özel nitelikli veya sağlıkla ilgili veriler bakımından gerekli hallerde açık rıza alınır ve aktarım yalnızca gerekli kapsamda yapılır.</p>
+      </section>
+
+      <section class="section" id="tr-9">
+        <h2>9. Uygulama İzinleri</h2>
+        <div class="two-col">
+          <div class="mini-card"><strong>Kamera</strong><p>Yemek fotoğrafı çekerek analiz başlatmak için kullanılır.</p></div>
+          <div class="mini-card"><strong>Galeri / Fotoğraf Erişimi</strong><p>Mevcut yemek fotoğraflarını seçip analiz etmek için kullanılır.</p></div>
+          <div class="mini-card"><strong>Bildirimler</strong><p>Su içme, öğün, takip veya benzeri hatırlatıcılar için kullanılır.</p></div>
+          <div class="mini-card"><strong>Takip İzni</strong><p>iOS üzerinde reklam ölçümleme ve kişiselleştirme için ATT izni istenebilir.</p></div>
+        </div>
+        <p>Mikrofon, konum, HealthKit veya Google Fit erişimi kullanıldığına dair mevcut bir uygulama kanıtı bulunmamaktadır. Bu tür izinler ileride eklenirse politika güncellenir.</p>
+      </section>
+
+      <section class="section" id="tr-10">
+        <h2>10. Saklama Süreleri</h2>
+        <p>Kişisel veriler, hesap aktif olduğu ve işleme amacı devam ettiği sürece saklanır. Hesap kapatma veya silme talebinden sonra veriler silinir, anonimleştirilir veya mevzuatın izin verdiği ölçüde erişime kapatılır.</p>
+        <ul>
+          <li><strong>Hesap ve profil verileri:</strong> hesap aktif olduğu sürece.</li>
+          <li><strong>Beslenme, takip ve fotoğraf analizi kayıtları:</strong> hesap aktif olduğu sürece veya kullanıcı tarafından silinene kadar.</li>
+          <li><strong>Konuşma özetleri:</strong> hesap silinene veya operasyonel ihtiyaç sona erene kadar.</li>
+          <li><strong>Teknik loglar:</strong> güvenlik, hata ayıklama ve hizmet sürekliliği için gerekli sınırlı süre boyunca; kanunen daha uzun saklama gerekirse ilgili süre boyunca.</li>
+          <li><strong>Yedekler:</strong> varsa, rutin yedekleme döngüleri kapsamında üzerine yazılır veya kaldırılır; aktif işleme amacıyla kullanılmaz.</li>
+          <li><strong>Yasal kayıtlar:</strong> ilgili mevzuatın zorunlu tuttuğu süre boyunca saklanabilir.</li>
+        </ul>
+      </section>
+
+      <section class="section" id="tr-11">
+        <h2>11. Hesap Silme</h2>
+        <p>Hesap silme işlemini uygulama ayarlarından başlatabilirsiniz. Talep sonrası hesap ve ilişkili kullanıcı verileri sistemden silinir, anonimleştirilir veya mevzuatın izin verdiği ölçüde erişime kapatılır.</p>
+        <p>Hesap silme işlemi uygulama özelliklerine erişiminizi sona erdirebilir. Teknik loglar, yedek kopyalar veya yasal zorunluluk kapsamındaki kayıtlar kısa bir süre daha veya mevzuatta öngörülen süre boyunca tutulabilir.</p>
+      </section>
+
+      <section class="section" id="tr-12">
+        <h2>12. Güvenlik Tedbirleri</h2>
+        <p>Kişisel verilerin güvenliği için makul teknik ve idari tedbirler uygulanır. Hiçbir sistemin tamamen güvenli olduğu garanti edilemez.</p>
+        <ul>
+          <li>İletim sırasında HTTPS/TLS şifreleme kullanılır.</li>
+          <li>JWT ve token tabanlı kimlik doğrulama mekanizmaları kullanılır.</li>
+          <li>Parola kullanıldığı durumlarda parolalar güvenli özetleme yöntemleriyle saklanır.</li>
+          <li>Erişim kontrolleri ve asgari yetki prensibi uygulanır.</li>
+          <li>Güvenlik, hata tespiti ve kötüye kullanım önleme amacıyla teknik kayıtlar tutulabilir.</li>
+        </ul>
+      </section>
+
+      <section class="section" id="tr-13">
+        <h2>13. Kullanıcı Hakları</h2>
+        <p>KVKK m.11 ve uygulanabilir olduğu ölçüde GDPR kapsamında aşağıdaki haklara sahip olabilirsiniz:</p>
+        <ul>
+          <li>Kişisel verinizin işlenip işlenmediğini öğrenme.</li>
+          <li>İşlenmişse buna ilişkin bilgi talep etme.</li>
+          <li>İşleme amacını ve verilerin amaca uygun kullanılıp kullanılmadığını öğrenme.</li>
+          <li>Yurt içinde veya yurt dışında aktarılan üçüncü tarafları öğrenme.</li>
+          <li>Eksik veya yanlış işlenen verilerin düzeltilmesini isteme.</li>
+          <li>Silme, yok etme veya anonimleştirme talep etme.</li>
+          <li>Otomatik işleme sonuçlarına itiraz etme.</li>
+          <li>Zarar doğması halinde tazmin talep etme.</li>
+          <li>Uygulanabilir olduğunda veri taşınabilirliği, işlemeyi kısıtlama ve rızayı geri çekme haklarını kullanma.</li>
+          <li>Yetkili veri koruma otoritesine şikâyette bulunma.</li>
+        </ul>
+        <p>Taleplerinizi <a href="mailto:diyetcebimdeiletisim@gmail.com">diyetcebimdeiletisim@gmail.com</a> adresine iletebilirsiniz. Kimliğinizi doğrulamak için ek bilgi talep edilebilir. Başvurular, uygulanabilir mevzuatta öngörülen sürelerde; KVKK bakımından kural olarak en geç 30 gün içinde sonuçlandırılır.</p>
+      </section>
+
+      <section class="section" id="tr-14">
+        <h2>14. Çocukların Gizliliği</h2>
+        <p>Diyet Cebimde, 16 yaş altındaki çocuklara yönelik değildir. Uygulamayı kullanarak 16 yaşında veya daha büyük olduğunuzu beyan etmiş olursunuz.</p>
+        <p>16 yaş altındaki bir çocuğa ait kişisel verinin uygun yetkilendirme olmaksızın işlendiğini fark edersek, ilgili verileri silmek veya erişime kapatmak için makul adımları atabiliriz.</p>
+      </section>
+
+      <section class="section" id="tr-15">
+        <h2>15. Web Sitesi ve Dil Tercihi</h2>
+        <p>Bu gizlilik politikası sayfası, herkese açık statik bir web sayfası olarak sunulabilir. Sayfa üzerinde kullanıcı hesabı oluşturma veya giriş sistemi bulunmaz.</p>
+        <p>Bu sayfa, dil tercihinizi hatırlamak için tarayıcınızda <code>localStorage</code> kullanabilir. Bu tercih yalnızca TR/EN görünümünü korumak içindir; klasik reklam veya analiz çerezi olarak kullanılmaz.</p>
+      </section>
+
+      <section class="section" id="tr-16">
+        <h2>16. Politika Değişiklikleri</h2>
+        <p>Bu politika; uygulama özellikleri, kullanılan hizmet sağlayıcılar, mevzuat veya operasyonel süreçler değiştikçe güncellenebilir. Önemli değişiklikler uygulama içinden veya uygun diğer yöntemlerle bildirilebilir.</p>
+        <p>Güncel sürüm, sayfanın üst kısmındaki “Son Güncelleme” tarihi ile birlikte yayımlanır.</p>
+      </section>
+
+      <section class="section" id="tr-17">
+        <h2>17. İletişim</h2>
+        <p>Gizlilik, veri koruma, hesap silme veya kullanıcı haklarıyla ilgili talepler için iletişim adresi:</p>
+        <p><strong><a href="mailto:diyetcebimdeiletisim@gmail.com">diyetcebimdeiletisim@gmail.com</a></strong></p>
+      </section>
+    </article>
+
+    <article id="content-en" class="lang-content" lang="en" hidden>
+      <section class="hero">
+        <div class="hero-main">
+          <div class="eyebrow">KVKK + GDPR principles</div>
+          <h1>Privacy Policy and Data Protection Notice</h1>
+          <p class="subtitle">This notice explains how the Diyet Cebimde application collects, uses, shares, stores and deletes personal data.</p>
+        </div>
+        <aside class="meta-card" aria-label="Policy information">
+          <div class="meta-row"><span>Application</span><strong>Diyet Cebimde</strong></div>
+          <div class="meta-row"><span>Version</span><strong>1.1.0</strong></div>
+          <div class="meta-row"><span>Last Updated</span><strong>May 17, 2026</strong></div>
+          <div class="meta-row"><span>Contact</span><strong><a href="mailto:diyetcebimdeiletisim@gmail.com">diyetcebimdeiletisim@gmail.com</a></strong></div>
+        </aside>
+      </section>
+
+      <div class="notice"><strong>Important:</strong> Diyet Cebimde is not a medical device. The app does not provide medical diagnosis, treatment or professional healthcare advice. AI-generated outputs and nutritional estimates from photos are approximate.</div>
+
+      <nav class="toc" aria-label="Table of contents">
+        <h2>Table of Contents</h2>
+        <div class="toc-grid">
+          <a href="#en-1">1. Data Controller and Scope</a>
+          <a href="#en-2">2. Data Categories We Process</a>
+          <a href="#en-3">3. Purposes of Processing</a>
+          <a href="#en-4">4. Legal Bases</a>
+          <a href="#en-5">5. Special Category / Health-Related Data</a>
+          <a href="#en-6">6. AI Chat and Food Photo Analysis</a>
+          <a href="#en-7">7. Advertising, Consent and Tracking</a>
+          <a href="#en-8">8. Third-Party Providers and International Transfers</a>
+          <a href="#en-9">9. App Permissions</a>
+          <a href="#en-10">10. Retention Periods</a>
+          <a href="#en-11">11. Account Deletion</a>
+          <a href="#en-12">12. Security Measures</a>
+          <a href="#en-13">13. User Rights</a>
+          <a href="#en-14">14. Children’s Privacy</a>
+          <a href="#en-15">15. Website and Language Preference</a>
+          <a href="#en-16">16. Changes to This Policy</a>
+          <a href="#en-17">17. Contact</a>
+        </div>
+      </nav>
+
+      <section class="section" id="en-1">
+        <h2>1. Data Controller and Scope</h2>
+        <p><strong>Data controller: Melisa Karakurt, the individual developer of the ‘Diyet Cebimde’ application.</strong></p>
+        <p>The data controller operates as an individual developer based in Ankara, Türkiye. This notice covers personal data processing activities carried out through the Diyet Cebimde mobile application and its public privacy policy page.</p>
+        <p>This notice has been prepared with regard to the Turkish Personal Data Protection Law No. 6698 (“KVKK”), relevant secondary legislation, and applicable principles of the European Union General Data Protection Regulation (“GDPR”) to the extent relevant.</p>
+      </section>
+
+      <section class="section" id="en-2">
+        <h2>2. Data Categories We Process</h2>
+        <ul>
+          <li><strong>Identity and account data:</strong> name, surname, email address, user ID, Google OAuth information, authentication and session information.</li>
+          <li><strong>Health and nutrition-related data:</strong> weight, height, age, gender, target weight, allergies, disease or condition information if provided by the user, calorie and macro tracking, water consumption, activity and exercise data.</li>
+          <li><strong>Content data:</strong> summaries derived from chat content, topic/profile information, message counters, manual meal logs and food photo analysis results.</li>
+          <li><strong>Technical data:</strong> app version, device and connection information, transaction records, debugging logs and security-related technical logs.</li>
+          <li><strong>Advertising and consent data:</strong> advertising identifiers, ad interaction events, consent status, platform advertising preferences and related measurement events.</li>
+          <li><strong>Internal analytics data:</strong> internal metrics generated to monitor app performance, usage statistics and service quality.</li>
+        </ul>
+      </section>
+
+      <section class="section" id="en-3">
+        <h2>3. Purposes of Processing</h2>
+        <ul>
+          <li>To provide a personalized nutrition and wellness experience.</li>
+          <li>To enable meal, water, weight, activity and progress tracking.</li>
+          <li>To generate estimated nutrition outputs through AI-supported chat and food photo analysis.</li>
+          <li>To create accounts, manage sessions, authenticate users and maintain account security.</li>
+          <li>To provide app functions such as notifications and reminders.</li>
+          <li>To detect errors, improve performance, prevent abuse and maintain service continuity.</li>
+          <li>To show in-app ads, measure ad performance and personalize ads according to user preferences where permitted.</li>
+          <li>To comply with legal obligations and respond to user requests.</li>
+        </ul>
+      </section>
+
+      <section class="section" id="en-4">
+        <h2>4. Legal Bases</h2>
+        <p>Personal data may be processed based on explicit consent, performance or formation of a contract, legal obligation, legitimate interests of the data controller, and other legal bases provided under applicable law.</p>
+        <ul>
+          <li><strong>Explicit consent:</strong> health-related data, special category data, international transfers where required, and personalized advertising/tracking preferences.</li>
+          <li><strong>Performance of a contract:</strong> account creation, operation of app features and personalized tracking services.</li>
+          <li><strong>Legitimate interests:</strong> security, abuse prevention, error detection, service continuity and internal performance analysis.</li>
+          <li><strong>Legal obligation:</strong> responding to competent authority requests, retaining legally required records or handling legal claims.</li>
+        </ul>
+      </section>
+
+      <section class="section" id="en-5">
+        <h2>5. Special Category / Health-Related Data</h2>
+        <p>Diyet Cebimde may process weight, height, allergies, target weight, dietary preferences, disease or condition information and similar data to the extent entered by the user. This data may qualify as health-related or special category data.</p>
+        <p>Such data is processed only to provide the app’s wellness and nutrition tracking features and only to the extent necessary. Explicit consent is obtained where required.</p>
+        <p>Diyet Cebimde is not a medical device. The app does not provide medical diagnosis, treatment, disease management or professional healthcare advice. Users should consult a qualified healthcare professional in cases of pregnancy, chronic illness, serious allergies, history of eating disorders, special diet needs or ongoing medical treatment.</p>
+      </section>
+
+      <section class="section" id="en-6">
+        <h2>6. AI Chat and Food Photo Analysis</h2>
+        <p>The app may use third-party AI services such as Google Gemini API for AI-supported chat and food photo analysis. Texts, food photos or related content submitted by the user may be transferred to these services for analysis.</p>
+        <p>Calories, macronutrients, portions and ingredient estimates generated from photos are approximate. AI-generated outputs may be incomplete, inaccurate or unsuitable for your individual circumstances.</p>
+        <p>The app may not necessarily store full chat transcripts; however, summaries, profile information, topics and message counters derived from conversations may be stored. These records may be retained until account deletion or until the legal/operational need ends.</p>
+        <p>We do not intentionally use your personal content to train our own AI models. Third-party AI processing is subject to the provider’s applicable terms and privacy practices.</p>
+      </section>
+
+      <section class="section" id="en-7">
+        <h2>7. Advertising, Consent and Tracking</h2>
+        <p>The app may display ads through Google AdMob. In connection with ad delivery, advertising identifiers, ad interaction events, device information and consent preferences may be processed.</p>
+        <p>Personalized ads may be shown according to platform rules and the user’s consent/permission preferences. Where applicable, the Google UMP consent flow, iOS App Tracking Transparency permission and operating system advertising preferences may be used. If consent is not given, non-personalized ads may be shown to the extent technically available.</p>
+        <p>You may change advertising tracking and personalization preferences through your device settings, platform permissions or consent tools provided inside the app.</p>
+      </section>
+
+      <section class="section" id="en-8">
+        <h2>8. Third-Party Service Providers and International Transfers</h2>
+        <p>Diyet Cebimde uses third-party service providers for some functions. Transfers are limited to the minimum scope necessary for the service to work.</p>
+        <ul>
+          <li><strong>Google Gemini API:</strong> AI chat and food photo analysis.</li>
+          <li><strong>Google OAuth:</strong> Google sign-in if chosen by the user.</li>
+          <li><strong>Google AdMob:</strong> in-app advertising, measurement and ad personalization where applicable.</li>
+          <li><strong>Railway and infrastructure services:</strong> app server, backend and database infrastructure.</li>
+          <li><strong>App Store / Google Play:</strong> distribution, platform services and payment/subscription processes if applicable.</li>
+          <li><strong>Expo Notifications:</strong> local or scheduled notification functionality.</li>
+        </ul>
+        <p>Some of these providers may be located outside Türkiye or the European Union. Therefore, personal data may be transferred internationally where necessary for app features to function. For special category or health-related data, explicit consent is obtained where required and transfers are limited to what is necessary.</p>
+      </section>
+
+      <section class="section" id="en-9">
+        <h2>9. App Permissions</h2>
+        <div class="two-col">
+          <div class="mini-card"><strong>Camera</strong><p>Used to take food photos and start analysis.</p></div>
+          <div class="mini-card"><strong>Gallery / Photo Access</strong><p>Used to select existing food photos for analysis.</p></div>
+          <div class="mini-card"><strong>Notifications</strong><p>Used for water, meal, tracking or similar reminders.</p></div>
+          <div class="mini-card"><strong>Tracking Permission</strong><p>On iOS, ATT permission may be requested for ad measurement and personalization.</p></div>
+        </div>
+        <p>There is currently no evidence of microphone, location, HealthKit or Google Fit access. If such permissions are added in the future, this policy will be updated.</p>
+      </section>
+
+      <section class="section" id="en-10">
+        <h2>10. Retention Periods</h2>
+        <p>Personal data is retained while the account is active and while the processing purpose continues. After account closure or deletion request, data is deleted, anonymized or access-restricted to the extent permitted by law.</p>
+        <ul>
+          <li><strong>Account and profile data:</strong> retained while the account is active.</li>
+          <li><strong>Nutrition, tracking and photo analysis records:</strong> retained while the account is active or until deleted by the user.</li>
+          <li><strong>Conversation summaries:</strong> retained until account deletion or until the operational need ends.</li>
+          <li><strong>Technical logs:</strong> retained only for a limited period necessary for security, debugging and service continuity, unless a longer period is required by law.</li>
+          <li><strong>Backups:</strong> backup copies, if any, are overwritten or removed according to routine backup cycles and are not used for active processing.</li>
+          <li><strong>Legal records:</strong> may be retained for the period required by applicable law.</li>
+        </ul>
+      </section>
+
+      <section class="section" id="en-11">
+        <h2>11. Account Deletion</h2>
+        <p>You can start account deletion from the app settings. After the request, your account and associated user data are deleted, anonymized or access-restricted to the extent permitted by law.</p>
+        <p>Account deletion may end your access to app features. Technical logs, backup copies or legally required records may remain for a short period or for the period required by law.</p>
+      </section>
+
+      <section class="section" id="en-12">
+        <h2>12. Security Measures</h2>
+        <p>Reasonable technical and administrative measures are applied to protect personal data. No system can be guaranteed to be 100% secure.</p>
+        <ul>
+          <li>HTTPS/TLS encryption is used during transmission.</li>
+          <li>JWT and token-based authentication mechanisms are used.</li>
+          <li>Where passwords are used, they are stored using secure hashing methods.</li>
+          <li>Access controls and the least privilege principle are applied.</li>
+          <li>Technical records may be kept for security, error detection and abuse prevention.</li>
+        </ul>
+      </section>
+
+      <section class="section" id="en-13">
+        <h2>13. User Rights</h2>
+        <p>Under KVKK Article 11 and, where applicable, GDPR principles, you may have the following rights:</p>
+        <ul>
+          <li>To learn whether your personal data is processed.</li>
+          <li>To request information if your data has been processed.</li>
+          <li>To learn the purpose of processing and whether data is used in line with that purpose.</li>
+          <li>To learn the third parties to whom data is transferred domestically or internationally.</li>
+          <li>To request correction of incomplete or inaccurate data.</li>
+          <li>To request deletion, destruction or anonymization.</li>
+          <li>To object to results produced by automated processing.</li>
+          <li>To request compensation if damage occurs.</li>
+          <li>Where applicable, to exercise data portability, restriction of processing and withdrawal of consent rights.</li>
+          <li>To lodge a complaint with a competent data protection authority.</li>
+        </ul>
+        <p>You may send requests to <a href="mailto:diyetcebimdeiletisim@gmail.com">diyetcebimdeiletisim@gmail.com</a>. Additional information may be requested to verify your identity. Requests are handled within the periods required by applicable law; under KVKK, generally within 30 days.</p>
+      </section>
+
+      <section class="section" id="en-14">
+        <h2>14. Children’s Privacy</h2>
+        <p>Diyet Cebimde is not intended for children under 16. By using the app, you confirm that you are at least 16 years old.</p>
+        <p>If we become aware that personal data of a child under 16 has been processed without proper authorization, we may take reasonable steps to delete or restrict access to that data.</p>
+      </section>
+
+      <section class="section" id="en-15">
+        <h2>15. Website and Language Preference</h2>
+        <p>This privacy policy page may be provided as a public static web page. It does not include account creation or sign-in functionality.</p>
+        <p>This page may use <code>localStorage</code> in your browser to remember your language preference. This preference is used only to preserve the TR/EN view and is not used as a classic advertising or analytics cookie.</p>
+      </section>
+
+      <section class="section" id="en-16">
+        <h2>16. Changes to This Policy</h2>
+        <p>This policy may be updated as app features, service providers, laws or operational processes change. Important changes may be communicated inside the app or through other appropriate methods.</p>
+        <p>The current version is published together with the “Last Updated” date shown at the top of this page.</p>
+      </section>
+
+      <section class="section" id="en-17">
+        <h2>17. Contact</h2>
+        <p>For privacy, data protection, account deletion or user rights requests, contact:</p>
+        <p><strong><a href="mailto:diyetcebimdeiletisim@gmail.com">diyetcebimdeiletisim@gmail.com</a></strong></p>
+      </section>
+    </article>
+  </main>
+
+  <footer class="footer">
+    <p><strong>Diyet Cebimde</strong> · <span data-footer-tr>Son güncelleme: 17 Mayıs 2026</span><span data-footer-en hidden>Last updated: May 17, 2026</span> · <a href="mailto:diyetcebimdeiletisim@gmail.com">diyetcebimdeiletisim@gmail.com</a></p>
+  </footer>
+
+  <script>
+    (function () {
+      const storageKey = 'diyetcebimde_lang';
+      const tr = document.getElementById('content-tr');
+      const en = document.getElementById('content-en');
+      const btnTr = document.getElementById('btn-tr');
+      const btnEn = document.getElementById('btn-en');
+      const topSubtitle = document.querySelector('[data-i18n="top-subtitle"]');
+      const footerTr = document.querySelector('[data-footer-tr]');
+      const footerEn = document.querySelector('[data-footer-en]');
+
+      function setLang(lang) {
+        const selected = lang === 'en' ? 'en' : 'tr';
+        document.documentElement.lang = selected;
+        document.title = selected === 'tr'
+          ? 'Diyet Cebimde - Gizlilik Politikası'
+          : 'Diyet Cebimde - Privacy Policy';
+
+        tr.hidden = selected !== 'tr';
+        en.hidden = selected !== 'en';
+        btnTr.classList.toggle('active', selected === 'tr');
+        btnEn.classList.toggle('active', selected === 'en');
+        btnTr.setAttribute('aria-pressed', String(selected === 'tr'));
+        btnEn.setAttribute('aria-pressed', String(selected === 'en'));
+        topSubtitle.textContent = selected === 'tr' ? 'Gizlilik Politikası' : 'Privacy Policy';
+        footerTr.hidden = selected !== 'tr';
+        footerEn.hidden = selected !== 'en';
+
+        try { localStorage.setItem(storageKey, selected); } catch (e) {}
+      }
+
+      btnTr.addEventListener('click', function () { setLang('tr'); });
+      btnEn.addEventListener('click', function () { setLang('en'); });
+
+      let initial = 'tr';
+      try {
+        const saved = localStorage.getItem(storageKey);
+        if (saved === 'en' || saved === 'tr') initial = saved;
+      } catch (e) {}
+      setLang(initial);
+    })();
+  </script>
+</body>
+</html>
