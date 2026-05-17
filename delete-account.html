@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Diyet Cebimde | Account Deletion</title>
+  <meta name="description" content="Diyet Cebimde account deletion instructions and data deletion request page." />
+  <style>
+    :root{
+      --bg:#f7faf8;--card:#ffffff;--text:#17211b;--muted:#66736b;--line:#dfe8e2;--accent:#2f8f5b;--accent2:#e8f6ee;--danger:#b42318;--shadow:0 16px 40px rgba(20,40,28,.08);--radius:22px;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;background:radial-gradient(circle at top left,#eaf8ef 0,#f7faf8 36%,#f7faf8 100%);color:var(--text);line-height:1.65}
+    a{color:var(--accent);font-weight:700;text-decoration:none} a:hover{text-decoration:underline}
+    .topbar{position:sticky;top:0;z-index:10;background:rgba(247,250,248,.88);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+    .topbar-inner{max-width:1040px;margin:0 auto;padding:14px 22px;display:flex;align-items:center;justify-content:space-between;gap:18px}
+    .brand{display:flex;align-items:center;gap:12px;font-weight:800;letter-spacing:-.02em}.logo{width:38px;height:38px;border-radius:13px;background:linear-gradient(135deg,#2f8f5b,#89d39f);display:grid;place-items:center;color:white;font-weight:900}
+    .lang{display:flex;gap:8px}.lang button{border:1px solid var(--line);background:white;color:var(--muted);border-radius:999px;padding:8px 13px;font-weight:800;cursor:pointer}.lang button.active{background:var(--accent);color:white;border-color:var(--accent)}
+    main{max-width:1040px;margin:0 auto;padding:38px 22px 70px}.hero{background:linear-gradient(135deg,#ffffff,#f1fbf5);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);padding:34px;margin-bottom:22px}.kicker{display:inline-flex;gap:8px;align-items:center;background:var(--accent2);color:var(--accent);font-weight:900;border-radius:999px;padding:7px 12px;font-size:13px;text-transform:uppercase;letter-spacing:.04em}h1{font-size:clamp(32px,5vw,52px);line-height:1.05;margin:18px 0 12px;letter-spacing:-.045em}p{margin:0 0 14px}.lead{font-size:18px;color:var(--muted);max-width:760px}.meta{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:24px}.meta div{background:white;border:1px solid var(--line);border-radius:16px;padding:14px}.meta b{display:block;font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:.05em}.meta span{font-weight:800}
+    .grid{display:grid;grid-template-columns:280px 1fr;gap:22px}.toc{position:sticky;top:84px;align-self:start;background:white;border:1px solid var(--line);border-radius:var(--radius);padding:20px;box-shadow:var(--shadow)}.toc h2{font-size:15px;margin:0 0 10px}.toc a{display:block;color:var(--muted);font-weight:700;padding:7px 0}.toc a:hover{color:var(--accent)}
+    .card{background:white;border:1px solid var(--line);border-radius:var(--radius);padding:26px;margin-bottom:18px;box-shadow:var(--shadow)}h2{font-size:24px;line-height:1.2;margin:0 0 14px;letter-spacing:-.02em}.steps{counter-reset:step;list-style:none;margin:18px 0 0;padding:0;display:grid;gap:12px}.steps li{counter-increment:step;display:flex;gap:14px;background:#fbfdfb;border:1px solid var(--line);border-radius:16px;padding:15px}.steps li:before{content:counter(step);flex:0 0 30px;width:30px;height:30px;border-radius:50%;background:var(--accent);color:#fff;display:grid;place-items:center;font-weight:900}.note{border-left:4px solid var(--accent);background:var(--accent2);border-radius:16px;padding:16px 18px;margin-top:14px}.warning{border-left-color:var(--danger);background:#fff4f2}.muted{color:var(--muted)}
+    .hidden{display:none!important}footer{max-width:1040px;margin:0 auto;padding:28px 22px 42px;color:var(--muted);border-top:1px solid var(--line)}
+    @media(max-width:820px){.grid{grid-template-columns:1fr}.toc{position:static}.meta{grid-template-columns:1fr}.hero{padding:24px}.topbar-inner{padding:12px 16px}main{padding:24px 16px 54px}}
+    @media print{.topbar,.toc{display:none}.grid{display:block}.card,.hero{box-shadow:none}body{background:white}}
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <div class="brand"><div class="logo">DC</div><span>Diyet Cebimde</span></div>
+      <div class="lang" aria-label="Language selector">
+        <button type="button" id="btn-tr" aria-label="Türkçe">TR</button>
+        <button type="button" id="btn-en" aria-label="English">EN</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero tr">
+      <span class="kicker">Hesap Silme</span>
+      <h1>Hesap ve Veri Silme Talebi</h1>
+      <p class="lead">Bu sayfa, Diyet Cebimde hesabınızı ve ilişkili kullanıcı verilerinizi nasıl silebileceğinizi açıklar.</p>
+      <div class="meta">
+        <div><b>Uygulama</b><span>Diyet Cebimde</span></div>
+        <div><b>Son Güncelleme</b><span>17 Mayıs 2026</span></div>
+        <div><b>İletişim</b><span>diyetcebimdeiletisim@gmail.com</span></div>
+      </div>
+    </section>
+
+    <section class="hero en hidden">
+      <span class="kicker">Account Deletion</span>
+      <h1>Account and Data Deletion Request</h1>
+      <p class="lead">This page explains how you can delete your Diyet Cebimde account and associated user data.</p>
+      <div class="meta">
+        <div><b>Application</b><span>Diyet Cebimde</span></div>
+        <div><b>Last Updated</b><span>May 17, 2026</span></div>
+        <div><b>Contact</b><span>diyetcebimdeiletisim@gmail.com</span></div>
+      </div>
+    </section>
+
+    <div class="grid tr">
+      <aside class="toc">
+        <h2>İçindekiler</h2>
+        <a href="#tr-app">Uygulama İçinden Silme</a>
+        <a href="#tr-email">E-posta ile Talep</a>
+        <a href="#tr-data">Silinen ve Saklanabilen Veriler</a>
+        <a href="#tr-time">İşlem Süresi</a>
+        <a href="#tr-contact">İletişim</a>
+      </aside>
+      <div>
+        <section class="card" id="tr-app">
+          <h2>1. Uygulama İçinden Hesap Silme</h2>
+          <p>Hesabınıza erişebiliyorsanız hesabınızı doğrudan Diyet Cebimde uygulaması içinden silebilirsiniz.</p>
+          <ol class="steps">
+            <li>Diyet Cebimde uygulamasını açın.</li>
+            <li>Ayarlar ekranına gidin.</li>
+            <li><strong>HESAP</strong> bölümünü bulun.</li>
+            <li><strong>Hesabı Sil</strong> seçeneğine dokunun.</li>
+            <li>Açılan onay penceresinde tekrar <strong>Hesabı Sil</strong> seçeneğine dokunun.</li>
+          </ol>
+          <div class="note">Silme işlemi onaylandığında uygulama backend sistemine hesap silme isteği gönderir ve işlem başarılı olursa oturumunuz kapatılır.</div>
+        </section>
+
+        <section class="card" id="tr-email">
+          <h2>2. E-posta ile Hesap Silme Talebi</h2>
+          <p>Uygulamaya erişemiyorsanız hesap silme talebinizi e-posta ile iletebilirsiniz.</p>
+          <p><strong>E-posta:</strong> <a href="mailto:diyetcebimdeiletisim@gmail.com">diyetcebimdeiletisim@gmail.com</a></p>
+          <p>Talebinizde, hesabınıza bağlı e-posta adresini belirtin. Kimliğinizi doğrulamak için ek bilgi istenebilir.</p>
+          <div class="note warning">Güvenlik nedeniyle, hesabınıza bağlı olmayan veya doğrulanamayan adreslerden gelen talepler için ek doğrulama yapılabilir.</div>
+        </section>
+
+        <section class="card" id="tr-data">
+          <h2>3. Hangi Veriler Silinir?</h2>
+          <p>Hesap silme sonrasında aktif hesap kayıtları ve hesabınızla ilişkili kullanıcı verileri silinir, anonimleştirilir veya erişime kapatılır.</p>
+          <p>Bu kapsam, profil bilgileri, beslenme ve takip kayıtları, fotoğraf analiz kayıtları, sohbet özetleri ve hesapla ilişkili uygulama verilerini içerebilir.</p>
+          <p class="muted">Yasal zorunluluk bulunan kayıtlar, güvenlik kayıtları, teknik loglar veya yedek kopyalarda kalan geçici izler mevzuat veya rutin silme/yedek döngüleri gereğince sınırlı süre saklanabilir.</p>
+        </section>
+
+        <section class="card" id="tr-time">
+          <h2>4. İşlem Süresi</h2>
+          <p>Uygulama içinden yapılan hesap silme işlemi teknik olarak mümkün olan en kısa sürede başlatılır.</p>
+          <p>E-posta ile iletilen talepler, kimlik doğrulama tamamlandıktan sonra yürürlükteki mevzuatta öngörülen sürelerde değerlendirilir. KVKK kapsamında başvurular genel olarak en geç 30 gün içinde sonuçlandırılır.</p>
+        </section>
+
+        <section class="card" id="tr-contact">
+          <h2>5. İletişim</h2>
+          <p>Hesap silme, veri silme veya kişisel veri haklarınıza ilişkin talepler için:</p>
+          <p><a href="mailto:diyetcebimdeiletisim@gmail.com">diyetcebimdeiletisim@gmail.com</a></p>
+        </section>
+      </div>
+    </div>
+
+    <div class="grid en hidden">
+      <aside class="toc">
+        <h2>Table of Contents</h2>
+        <a href="#en-app">Delete in the App</a>
+        <a href="#en-email">Request by Email</a>
+        <a href="#en-data">Data Deleted and Retained</a>
+        <a href="#en-time">Processing Time</a>
+        <a href="#en-contact">Contact</a>
+      </aside>
+      <div>
+        <section class="card" id="en-app">
+          <h2>1. Delete Your Account in the App</h2>
+          <p>If you can access your account, you can delete it directly inside the Diyet Cebimde app.</p>
+          <ol class="steps">
+            <li>Open the Diyet Cebimde app.</li>
+            <li>Go to the Settings screen.</li>
+            <li>Find the <strong>ACCOUNT</strong> section.</li>
+            <li>Tap <strong>Delete Account</strong>.</li>
+            <li>In the confirmation popup, tap <strong>Delete Account</strong> again.</li>
+          </ol>
+          <div class="note">After confirmation, the app sends an account deletion request to the backend system and signs you out if the operation succeeds.</div>
+        </section>
+
+        <section class="card" id="en-email">
+          <h2>2. Request Account Deletion by Email</h2>
+          <p>If you cannot access the app, you can request account deletion by email.</p>
+          <p><strong>Email:</strong> <a href="mailto:diyetcebimdeiletisim@gmail.com">diyetcebimdeiletisim@gmail.com</a></p>
+          <p>Please include the email address linked to your account. Additional information may be requested to verify your identity.</p>
+          <div class="note warning">For security reasons, requests sent from an address that is not linked to the account, or cannot be verified, may require additional verification.</div>
+        </section>
+
+        <section class="card" id="en-data">
+          <h2>3. What Data Is Deleted?</h2>
+          <p>After account deletion, active account records and user data associated with your account are deleted, anonymized or access-restricted.</p>
+          <p>This may include profile information, nutrition and tracking records, food photo analysis records, conversation summaries and app data linked to your account.</p>
+          <p class="muted">Records that must be kept by law, security records, technical logs or temporary remnants in backup copies may be retained for a limited period where required by law or routine deletion/backup cycles.</p>
+        </section>
+
+        <section class="card" id="en-time">
+          <h2>4. Processing Time</h2>
+          <p>Account deletion started inside the app is initiated as soon as technically possible.</p>
+          <p>Email requests are reviewed after identity verification and handled within the periods required by applicable law. Under KVKK, requests are generally concluded within 30 days.</p>
+        </section>
+
+        <section class="card" id="en-contact">
+          <h2>5. Contact</h2>
+          <p>For account deletion, data deletion or personal data rights requests, contact:</p>
+          <p><a href="mailto:diyetcebimdeiletisim@gmail.com">diyetcebimdeiletisim@gmail.com</a></p>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <span class="tr">Diyet Cebimde · Son güncelleme: 17 Mayıs 2026 · diyetcebimdeiletisim@gmail.com</span>
+    <span class="en hidden">Diyet Cebimde · Last updated: May 17, 2026 · diyetcebimdeiletisim@gmail.com</span>
+  </footer>
+
+  <script>
+    (function(){
+      const key = 'diyetcebimde_lang';
+      const btnTr = document.getElementById('btn-tr');
+      const btnEn = document.getElementById('btn-en');
+      function setLang(lang){
+        const isTr = lang === 'tr';
+        document.documentElement.lang = isTr ? 'tr' : 'en';
+        document.title = isTr ? 'Diyet Cebimde | Hesap Silme' : 'Diyet Cebimde | Account Deletion';
+        document.querySelectorAll('.tr').forEach(el => el.classList.toggle('hidden', !isTr));
+        document.querySelectorAll('.en').forEach(el => el.classList.toggle('hidden', isTr));
+        btnTr.classList.toggle('active', isTr);
+        btnEn.classList.toggle('active', !isTr);
+        btnTr.setAttribute('aria-pressed', String(isTr));
+        btnEn.setAttribute('aria-pressed', String(!isTr));
+        localStorage.setItem(key, lang);
+      }
+      btnTr.addEventListener('click', () => setLang('tr'));
+      btnEn.addEventListener('click', () => setLang('en'));
+      const saved = localStorage.getItem(key);
+      setLang(saved === 'en' ? 'en' : 'tr');
+    })();
+  </script>
+</body>
+</html>
