@@ -377,8 +377,8 @@
         </div>
         <aside class="meta-card" aria-label="Politika bilgileri">
           <div class="meta-row"><span>Uygulama</span><strong>Diyet Cebimde</strong></div>
-          <div class="meta-row"><span>Sürüm</span><strong>1.1.0</strong></div>
-          <div class="meta-row"><span>Son Güncelleme</span><strong>17 Mayıs 2026</strong></div>
+          <div class="meta-row"><span>Sürüm</span><strong>1.1.1</strong></div>
+          <div class="meta-row"><span>Son Güncelleme</span><strong>19 Mayıs 2026</strong></div>
           <div class="meta-row"><span>İletişim</span><strong><a href="mailto:diyetcebimdeiletisim@gmail.com">diyetcebimdeiletisim@gmail.com</a></strong></div>
         </aside>
       </section>
@@ -550,8 +550,8 @@
 
       <section class="section" id="tr-14">
         <h2>14. Çocukların Gizliliği</h2>
-        <p>Diyet Cebimde, 16 yaş altındaki çocuklara yönelik değildir. Uygulamayı kullanarak 16 yaşında veya daha büyük olduğunuzu beyan etmiş olursunuz.</p>
-        <p>16 yaş altındaki bir çocuğa ait kişisel verinin uygun yetkilendirme olmaksızın işlendiğini fark edersek, ilgili verileri silmek veya erişime kapatmak için makul adımları atabiliriz.</p>
+        <p>Diyet Cebimde, sağlıkla ilgili içerik barındırması nedeniyle 18 yaşın altındaki kullanıcılara yönelik değildir. Uygulamayı kullanarak 18 yaşında veya daha büyük olduğunuzu beyan etmiş olursunuz.</p>
+        <p>18 yaş altındaki bir kullanıcıya ait kişisel verinin uygun yetkilendirme olmaksızın işlendiğini fark edersek, ilgili verileri silmek veya erişime kapatmak için makul adımları atabiliriz.</p>
       </section>
 
       <section class="section" id="tr-15">
@@ -582,8 +582,8 @@
         </div>
         <aside class="meta-card" aria-label="Policy information">
           <div class="meta-row"><span>Application</span><strong>Diyet Cebimde</strong></div>
-          <div class="meta-row"><span>Version</span><strong>1.1.0</strong></div>
-          <div class="meta-row"><span>Last Updated</span><strong>May 17, 2026</strong></div>
+          <div class="meta-row"><span>Version</span><strong>1.1.1</strong></div>
+          <div class="meta-row"><span>Last Updated</span><strong>May 19, 2026</strong></div>
           <div class="meta-row"><span>Contact</span><strong><a href="mailto:diyetcebimdeiletisim@gmail.com">diyetcebimdeiletisim@gmail.com</a></strong></div>
         </aside>
       </section>
@@ -755,8 +755,8 @@
 
       <section class="section" id="en-14">
         <h2>14. Children’s Privacy</h2>
-        <p>Diyet Cebimde is not intended for children under 16. By using the app, you confirm that you are at least 16 years old.</p>
-        <p>If we become aware that personal data of a child under 16 has been processed without proper authorization, we may take reasonable steps to delete or restrict access to that data.</p>
+        <p>Because Diyet Cebimde includes health-related content, it is not intended for users under 18. By using the app, you confirm that you are at least 18 years old.</p>
+        <p>If we become aware that personal data of a user under 18 has been processed without proper authorization, we may take reasonable steps to delete or restrict access to that data.</p>
       </section>
 
       <section class="section" id="en-15">
@@ -780,7 +780,7 @@
   </main>
 
   <footer class="footer">
-    <p><strong>Diyet Cebimde</strong> · <span data-footer-tr>Son güncelleme: 17 Mayıs 2026</span><span data-footer-en hidden>Last updated: May 17, 2026</span> · <a href="mailto:diyetcebimdeiletisim@gmail.com">diyetcebimdeiletisim@gmail.com</a></p>
+    <p><strong>Diyet Cebimde</strong> · <span data-footer-tr>Son güncelleme: 19 Mayıs 2026 · Sürüm 1.1.1</span><span data-footer-en hidden>Last updated: May 19, 2026 · Version 1.1.1</span> · <a href="mailto:diyetcebimdeiletisim@gmail.com">diyetcebimdeiletisim@gmail.com</a></p>
   </footer>
 
   <script>
@@ -820,7 +820,11 @@
       let initial = 'tr';
       try {
         const saved = localStorage.getItem(storageKey);
-        if (saved === 'en' || saved === 'tr') initial = saved;
+        if (saved === 'en' || saved === 'tr') {
+          initial = saved;
+        } else if (navigator.language && !navigator.language.toLowerCase().startsWith('tr')) {
+          initial = 'en';
+        }
       } catch (e) {}
       setLang(initial);
     })();

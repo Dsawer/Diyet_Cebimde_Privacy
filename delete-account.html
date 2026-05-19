@@ -43,7 +43,7 @@
       <p class="lead">Bu sayfa, Diyet Cebimde hesabınızı ve ilişkili kullanıcı verilerinizi nasıl silebileceğinizi açıklar.</p>
       <div class="meta">
         <div><b>Uygulama</b><span>Diyet Cebimde</span></div>
-        <div><b>Son Güncelleme</b><span>17 Mayıs 2026</span></div>
+        <div><b>Son Güncelleme</b><span>19 Mayıs 2026</span></div>
         <div><b>İletişim</b><span>diyetcebimdeiletisim@gmail.com</span></div>
       </div>
     </section>
@@ -54,7 +54,7 @@
       <p class="lead">This page explains how you can delete your Diyet Cebimde account and associated user data.</p>
       <div class="meta">
         <div><b>Application</b><span>Diyet Cebimde</span></div>
-        <div><b>Last Updated</b><span>May 17, 2026</span></div>
+        <div><b>Last Updated</b><span>May 19, 2026</span></div>
         <div><b>Contact</b><span>diyetcebimdeiletisim@gmail.com</span></div>
       </div>
     </section>
@@ -165,8 +165,8 @@
   </main>
 
   <footer>
-    <span class="tr">Diyet Cebimde · Son güncelleme: 17 Mayıs 2026 · diyetcebimdeiletisim@gmail.com</span>
-    <span class="en hidden">Diyet Cebimde · Last updated: May 17, 2026 · diyetcebimdeiletisim@gmail.com</span>
+    <span class="tr">Diyet Cebimde · Son güncelleme: 19 Mayıs 2026 · diyetcebimdeiletisim@gmail.com</span>
+    <span class="en hidden">Diyet Cebimde · Last updated: May 19, 2026 · diyetcebimdeiletisim@gmail.com</span>
   </footer>
 
   <script>
@@ -189,7 +189,13 @@
       btnTr.addEventListener('click', () => setLang('tr'));
       btnEn.addEventListener('click', () => setLang('en'));
       const saved = localStorage.getItem(key);
-      setLang(saved === 'en' ? 'en' : 'tr');
+      let initial = 'tr';
+      if (saved === 'en' || saved === 'tr') {
+        initial = saved;
+      } else if (navigator.language && !navigator.language.toLowerCase().startsWith('tr')) {
+        initial = 'en';
+      }
+      setLang(initial);
     })();
   </script>
 </body>
